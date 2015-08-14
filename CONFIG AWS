@@ -1,0 +1,13 @@
+sudo apt-get update
+
+wget http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip
+sudo apt-get install git
+sudo apt-get install php5 apache2 libapache2-mod-php5 mysql-server
+sudo service apache2 restart
+
+sudo mysql -u -root -p
+
+
+sudo apt-get install awscli
+
+http://ec2-52-21-78-253.compute-1.amazonaws.com/chat/

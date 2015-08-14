@@ -1,0 +1,11 @@
+RewriteEngine on
+DirectorySlash Off
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|public|css|js|png|jpg|gif|robots\.txt)
+
+RewriteBase /
+DirectoryIndex index.php
+
+RewriteRule ^(.*)$ index.php?page=$1
